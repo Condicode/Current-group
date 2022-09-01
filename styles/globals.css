@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Spacegrotesk";
+  src: url(../fonts/spacegrotesk/SpaceGrotesk-Regular.otf);
+}
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: url(../fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
+}
+@font-face {
+  font-family: "SpaceGrotesk-Light";
+  src: url(../fonts/spacegrotesk/SpaceGrotesk-Light.otf);
+}
+@font-face {
+  font-family: "ProximaNovaFont";
+  src: url(../fonts/Proxima-Nova-Font/ProximaNovaFont.otf);
+}
+
 html,
 body {
   padding: 0;
@@ -20,7 +37,8 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #4e4e4e;
+    background: #fff;
+    font-family: "Spacegrotesk";
   }
 }

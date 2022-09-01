@@ -1,0 +1,102 @@
+.Footer {
+  position: relative;
+  height: 65vh;
+  width: 100%;
+  background: #ffbf23;
+  overflow: hidden;
+}
+.Top {
+  height: 20vh;
+  width: 100%;
+  padding: 100px 150px;
+}
+.Logo {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #000;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Logo h2 {
+  font-family: "SpaceGrotesk-Bold";
+  font-size: 30px;
+  cursor: pointer;
+}
+.Bottom {
+  display: flex;
+
+  height: 40vh;
+  width: 100%;
+  padding: 10px 250px;
+}
+.Bottom h3 {
+  font-family: "SpaceGrotesk-Bold";
+  font-size: 22px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.Bottom h4 {
+  font-family: "SpaceGrotesk";
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin: 0;
+  line-height: 2;
+}
+
+.Bottom p {
+  font-size: 16px;
+  font-family: "ProximaNovaFont";
+  /* font-family: "SpaceGrotesk-Light"; */
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.Contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.Social {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.Design {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.Copyright {
+  position: relative;
+  height: 5vh;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Copyright p {
+  font-size: 14px;
+  font-family: "ProximaNovaFont";
+  font-family: "SpaceGrotesk-Light";
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}

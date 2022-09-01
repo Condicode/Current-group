@@ -1,0 +1,34 @@
+.About {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  padding: 30px 300px;
+  background: #ffbf23;
+  overflow: hidden;
+}
+.Left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.Left h2 {
+  font-family: "Spacegrotesk";
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.Right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 0 40px;
+}
+.Right p {
+  font-size: 18px;
+  font-family: "Spacegrotesk";
+}

@@ -1,0 +1,79 @@
+.Team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  width: 100%;
+  padding: 30px 200px;
+  background-color: #ffd7ef;
+  overflow: hidden;
+}
+.Top h2 {
+  font-family: "Spacegrotesk";
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.Top p {
+  font-size: 18px;
+  font-family: "ProximaNovaFont";
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 0;
+  width: 35%;
+}
+.Bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  gap: 100px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  /* padding: 30px; */
+  width: 350px;
+  height: fit-content;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+.Image {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+.Image__inner {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.Description {
+  padding: 30px;
+  /* background: #ffbf23; */
+  height: fit-content;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.Description h3 {
+  font-family: "Spacegrotesk";
+  /* font-weight: normal; */
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.Description h5 {
+  font-family: "Spacegrotesk";
+  /* font-weight: normal; */
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.Description p {
+  font-size: 16px;
+  font-family: "ProximaNovaFont";
+  font-weight: normal;
+  line-height: 1.5;
+}

@@ -1,0 +1,97 @@
+.Hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  padding: 30px 200px;
+  overflow: hidden;
+}
+.Left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.Left h1 {
+  font-size: 50px;
+  font-family: "Spacegrotesk";
+  font-weight: normal;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+.Left p {
+  font-size: 20px;
+  font-family: "ProximaNovaFont";
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.Left button {
+  width: fit-content;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 70px;
+  margin-top: 0;
+  cursor: pointer;
+}
+.Left ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.Left ul li {
+  display: flex;
+  margin-right: 50px;
+}
+.Left ul li p {
+  margin-right: 15px;
+  font-family: "SpaceGrotesk-Light";
+  font-size: 13px;
+}
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.Right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.Image {
+  position: relative;
+  width: 450px;
+  height: 450px;
+}
+.Blob {
+  position: absolute;
+  width: 800px;
+  /* right: 200px; */
+}
+.Wave {
+  position: absolute;
+  width: 100%;
+  /* height: 5vh; */
+  left: 0;
+  bottom: -15vh;
+  /* right: 200px; */
+}

@@ -1,0 +1,38 @@
+.CTA {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.CTA h1 {
+  font-size: 40px;
+  font-family: "Spacegrotesk";
+  font-weight: normal;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.CTA button {
+  width: fit-content;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 70px;
+  margin-top: 0;
+  cursor: pointer;
+}
+.Image {
+  position: relative;
+  width: 450px;
+  height: 450px;
+}

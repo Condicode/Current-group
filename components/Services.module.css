@@ -1,0 +1,78 @@
+.Services {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 30px 200px;
+  background-color: #fbeeca;
+  overflow: hidden;
+}
+.Top h2 {
+  font-family: "Spacegrotesk";
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.Top p {
+  font-size: 18px;
+  font-family: "ProximaNovaFont";
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 0;
+  width: 35%;
+}
+.Bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  gap: 100px;
+}
+.Bottom h3 {
+  font-family: "Spacegrotesk";
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.Bottom p {
+  font-size: 16px;
+  font-family: "ProximaNovaFont";
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.One {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Three {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Four {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Image {
+  position: relative;
+  height: 300px;
+  width: 226px;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+.Image__inner {
+  border-radius: 15px;
+}
