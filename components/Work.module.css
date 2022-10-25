@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: fit-content;
   width: 100%;
   padding: 30px 200px;
   overflow: hidden;
@@ -37,9 +37,10 @@
   flex-direction: column;
   /* padding: 30px; */
   width: 100%;
-  height: 500px;
-  border: 2px solid #000;
+  height: fit-content;
+  /* border: 2px solid #000; */
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .Image {
   position: relative;
@@ -53,7 +54,7 @@
 .Description {
   padding: 30px;
   background: #fbeeca;
-  height: 200px;
+  height: fit-content;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -69,4 +70,253 @@
   font-family: "ProximaNovaFont";
   font-weight: normal;
   line-height: 1.5;
+}
+
+/* media queries  max-width: 1440px*/
+@media (max-width: 1440px) {
+  .Work {
+    padding: 30px 100px;
+    height: fit-content;
+  }
+
+  .Top p {
+    width: 35%;
+  }
+
+  .Bottom {
+    margin-top: 50px;
+    gap: 50px;
+  }
+
+  .Card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .Image {
+    position: relative;
+    height: 300px;
+    width: 100%;
+  }
+
+  .Image__inner {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .Description {
+    padding: 30px;
+    background: #fbeeca;
+    height: fit-content;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .Description h3 {
+    font-family: "Spacegrotesk";
+    /* font-weight: normal; */
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  .Description p {
+    font-size: 16px;
+    font-family: "ProximaNovaFont";
+    font-weight: normal;
+    line-height: 1.5;
+  }
+}
+
+/* media queries  max-width: 1024px*/
+@media (max-width: 1024px) {
+  .Work {
+    padding: 30px 50px;
+    height: fit-content;
+  }
+  
+    .Top p {
+      width: 55%;
+    }
+  
+    .Bottom {
+      margin-top: 50px;
+      gap: 50px;
+    }
+  
+    .Card {
+      width: 100%;
+      height: fit-content;
+    }
+  
+    .Image {
+      position: relative;
+      height: 300px;
+      width: 100%;
+    }
+  
+    .Image__inner {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  
+    .Description {
+      padding: 30px;
+      background: #fbeeca;
+      height: fit-content;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  
+    .Description h3 {
+      font-family: "Spacegrotesk";
+      /* font-weight: normal; */
+      font-size: 24px;
+      text-transform: capitalize;
+    }
+  
+    .Description p {
+      font-size: 16px;
+      font-family: "ProximaNovaFont";
+      font-weight: normal;
+      line-height: 1.5;
+    }
+}
+
+/* media queries  max-width: 768px*/
+@media (max-width: 768px) {
+  .Work {
+    padding: 30px 50px;
+    height: fit-content;
+  }
+
+  .Top h2 {
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  .Top p {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .Bottom {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .Card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .Image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .Description {
+    height: 200px;
+  }
+}
+
+/* media queries  max-width: 420px*/
+@media (max-width: 420px) {
+  .Work {
+    padding: 30px 40px;
+    height: fit-content;
+  }
+
+  .Top h2 {
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  .Top p {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .Bottom {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .Card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .Image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .Description {
+    height: fit-content;
+  padding: 20px;
+  }
+}
+
+/* media queries  max-width: 375px*/
+@media (max-width: 375px) {
+  .Work {
+    padding: 20px 40px;
+    height: fit-content;
+  }
+  .Top h2 {
+    font-size: 40px;
+    margin-top: 80px;
+  }
+  .Top p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .Bottom {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .Card {
+    width: 100%;
+    height: fit-content;
+  }
+  .Image {
+    height: 300px;
+    width: 100%;
+  }
+  .Description {
+    height: fit-content;
+  padding: 20px;
+  }
+}
+
+/* media queries  max-width: 320px*/
+@media (max-width: 320px) {
+  .Work {
+    padding: 20px 20px;
+    height: fit-content;
+  }
+  .Top h2 {
+    font-size: 40px;
+    margin-top: 80px;
+  }
+  .Top p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .Bottom {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .Card {
+    width: 100%;
+    height: fit-content;
+  }
+  .Image {
+    height: 300px;
+    width: 100%;
+  }
+  .Description {
+    height: fit-content;
+  padding: 20px;
+  }
 }

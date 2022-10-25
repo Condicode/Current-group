@@ -6,7 +6,6 @@ import Hero from '../components/Hero'
 import Mission from '../components/Mission'
 import Nav from '../components/Nav'
 import Services from '../components/Services'
-import Team from '../components/Team'
 import Work from '../components/Work'
 
 export default function Home() {
@@ -24,7 +23,6 @@ export default function Home() {
       <Mission />
       <Services />
       <Work />
-      <Team />
       <CTA />
       <Footer />
     </div>
