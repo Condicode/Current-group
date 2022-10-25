@@ -25,7 +25,7 @@ function Hero() {
         opacity: 1,
         y: 0,
         ease: "Expo.easeInOut"
-      })
+      }, 0.2)
       .fromTo(q("#p1"), {
         opacity: 0,
         y: 20,
@@ -33,7 +33,7 @@ function Hero() {
         opacity: 1,
         y: 0,
         ease: "Power3.easeInOut",
-      }, 0.2)
+      }, 0.3)
       .fromTo(q("#button"), {
         opacity: 0,
         y: 20,
@@ -41,7 +41,7 @@ function Hero() {
         opacity: 1,
         y: 0,
         ease: "Power3.easeInOut",
-      }, 0.3)
+      }, 0.4)
       .fromTo(q("#icon1"), {
         opacity: 0,
         x: -20,
@@ -49,7 +49,7 @@ function Hero() {
         opacity: 1,
         x: 0,
         ease: "Power3.easeInOut",
-      }, 0.4)
+      }, 0.5)
       .fromTo(q("#icon1-p"), {
         opacity: 0,
         x: -20,
@@ -57,7 +57,7 @@ function Hero() {
         opacity: 1,
         x: 0,
         ease: "Power3.easeInOut",
-      }, 0.5)
+      }, 0.6)
       .fromTo(q("#icon2"), {
         opacity: 0,
         x: -20,
@@ -65,7 +65,7 @@ function Hero() {
         opacity: 1,
         x: 0,
         ease: "Expo.easeInOut"
-      }, 0.6)
+      }, 0.7)
       .fromTo(q("#icon2-p"), {
         opacity: 0,
         x: -20,
@@ -73,7 +73,7 @@ function Hero() {
         opacity: 1,
         x: 0,
         ease: "Power3.easeInOut",
-      }, 0.7)
+      }, 0.8)
       .fromTo(q("#icon3"), {
         opacity: 0,
         x: -20,
@@ -81,7 +81,7 @@ function Hero() {
         opacity: 1,
         x: 0,
         ease: "Power3.easeInOut",
-      }, 0.8)
+      }, 0.9)
       .fromTo(q("#icon3-p"), {
         opacity: 0,
         x: -20,
@@ -89,7 +89,7 @@ function Hero() {
         opacity: 1,
         x: 0,
         ease: "Power3.easeInOut",
-      }, 0.9)
+      }, 1)
       .fromTo(q("#svg1"), {
         opacity: 0,
         y: 20,

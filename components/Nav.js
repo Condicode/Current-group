@@ -25,6 +25,14 @@ function Nav() {
         x: 0,
         ease: "Expo.easeInOut"
       })
+      .fromTo(q("#menu"), {
+        opacity: 0,
+        x: 20,
+      }, {
+        opacity: 1,
+        x: 0,
+        ease: "Expo.easeInOut"
+      }, 0.2)
       .fromTo(q("#home"), {
         opacity: 0,
         x: -20,
@@ -75,7 +83,7 @@ function Nav() {
         <li id="services"><Link href="#services">Services</Link></li>
         <li id="contact"><Link href="#footer">Contact</Link></li>
         </ul>
-        <div className={styles.Menu__icon}>
+        <div className={styles.Menu__icon} id="menu">
         <HiMenuAlt3 size={35} />
         </div>
         </div>
