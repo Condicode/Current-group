@@ -185,22 +185,6 @@ function Footer() {
         duration: 1,
         y: 0,
         opacity: 1,
-      })
-      .fromTo(q("#footer-h3-three"), {
-        opacity: 0,
-        y: 30
-      },
-      {
-      scrollTrigger: {
-        trigger: '#footer-h3-three',
-        scrub: 1,
-        start: 'top 90%',
-        endTrigger: '',
-        end: "+=500",
-      },
-        duration: 1,
-        y: 0,
-        opacity: 1,
       });
 }, []);
     return (
