@@ -34,47 +34,32 @@ const variants2 = {
 
 
 export const Navigation = () => {
-const about = useRef(null);
 
-  const scrollToSection = (ref) => {
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: "smooth",
-    });
-  }
   return (
 <div className={styles.Nav}>
         <motion.ul variants={variants}>
         <MenuLink
             link="Menu"
             goBackIcon
-            onClick={() => {
-              scrollToSection(about);
-            }}
+            
             width="60%"
           />
           <MenuLink
             link="About"
             goBackIcon
-            onClick={() => {
-              scrollToSection(about);
-            }}
+            
             width="60%"
           />
           <MenuLink
             link="Projects"
             goBackIcon
-            onClick={() => {
-              scrollToSection(about);
-            }}
+            
             width="60%"
           />
           <MenuLink
             link="Contact"
             goBackIcon
-            onClick={() => {
-              scrollToSection(about);
-            }}
+            
             width="60%"
           />
         </motion.ul>
@@ -85,17 +70,13 @@ const about = useRef(null);
           <MenuLink
             link="Twitter"
             goBackIcon
-            onClick={() => {
-              scrollToSection(about);
-            }}
+            
             width="60%"
           />
           <MenuLink
             link="Instagram"
             goBackIcon
-            onClick={() => {
-              scrollToSection(about);
-            }}
+            
             width="60%"
           />
           </motion.div>
