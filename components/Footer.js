@@ -5,6 +5,9 @@ import image1 from '../images/logocg4.svg'
 import Link from 'next/link'
 
 function Footer() {
+    const currentTime = new Date()
+    const year = currentTime.getFullYear()
+
     return (
         <div className={styles.Footer} id="footer">
         <div className={styles.Top}>
@@ -30,11 +33,11 @@ function Footer() {
         </div>
         <div className={styles.Design}>
         <h3 id="footer-h3-three">website by:</h3>
-        <Link href=""><h4  id="footer-h4-four">condicode.com</h4></Link>
+        <Link href="https://www.condicode.com/" target="_blank" rel="noopener noreferrer"><h4  id="footer-h4-four">condicode digitals</h4></Link>
         </div>
         </div>
         <div className={styles.Copyright}>
-        <p id="footer-copyright">All rights reserved &copy; 2022 current group limited</p>
+        <p id="footer-copyright">All rights reserved &copy; {year} current group limited</p>
         </div>
         </div>
     )

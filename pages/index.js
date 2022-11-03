@@ -2,6 +2,7 @@ import Head from 'next/head'
 import About from '../components/About'
 import CTA from '../components/CTA'
 import Footer from '../components/Footer'
+import Gallerly from '../components/Gallerly'
 import Hero from '../components/Hero'
 import Mission from '../components/Mission'
 import Nav from '../components/Nav'
@@ -23,6 +24,7 @@ export default function Home() {
       <Mission />
       <Services />
       <Work />
+      <Gallerly />
       <CTA />
       <Footer />
     </div>

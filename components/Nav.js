@@ -7,85 +7,109 @@ import { gsap } from "gsap";
 import { useLayoutEffect, useRef} from 'react'
 React.useLayoutEffect = React.useEffect
 import { HiMenuAlt3 } from 'react-icons/hi';
+import { motion } from 'framer-motion'
 
 function Nav() {
-    const el = useRef();
-  const tl = useRef();
+  //   const el = useRef();
+  // const tl = useRef();
 
-   useLayoutEffect(() => {    
-  const q = gsap.utils.selector(el);
+  //  useLayoutEffect(() => {    
+  // const q = gsap.utils.selector(el);
 
     
-    tl.current = gsap.timeline({defaults: { delay: 1, duration: 1, ease: "power2.out"} })
-      .fromTo(q("#logo"), {
-        opacity: 0,
-        x: -20,
-      }, {
-        opacity: 1,
-        x: 0,
-        ease: "Expo.easeInOut"
-      })
-      .fromTo(q("#menu"), {
-        opacity: 0,
-        x: 20,
-      }, {
-        opacity: 1,
-        x: 0,
-        ease: "Expo.easeInOut"
-      }, 0.2)
-      .fromTo(q("#home"), {
-        opacity: 0,
-        x: -20,
-      }, {
-        opacity: 1,
-        x: 0,
-        ease: "Power3.easeInOut",
-      }, 0.2)
-      .fromTo(q("#about"), {
-        opacity: 0,
-        x: -20,
-      }, {
-        opacity: 1,
-        x: 0,
-        ease: "Power3.easeInOut",
-      }, 0.3)
-      .fromTo(q("#services"), {
-        opacity: 0,
-        x: -20,
-      }, {
-        opacity: 1,
-        x: 0,
-        ease: "Power3.easeInOut",
-      }, 0.4)
-      .fromTo(q("#contact"), {
-        opacity: 0,
-        x: -20,
-      }, {
-        opacity: 1,
-        x: 0,
-        ease: "Power3.easeInOut",
-      }, 0.5);
+  //   tl.current = gsap.timeline({defaults: { delay: 1, duration: 1, ease: "power2.out"} })
+  //     .fromTo(q("#logo"), {
+  //       opacity: 0,
+  //       x: -20,
+  //     }, {
+  //       opacity: 1,
+  //       x: 0,
+  //       ease: "Expo.easeInOut"
+  //     })
+  //     .fromTo(q("#menu"), {
+  //       opacity: 0,
+  //       x: 20,
+  //     }, {
+  //       opacity: 1,
+  //       x: 0,
+  //       ease: "Expo.easeInOut"
+  //     }, 0.2)
+  //     .fromTo(q("#home"), {
+  //       opacity: 0,
+  //       x: -20,
+  //     }, {
+  //       opacity: 1,
+  //       x: 0,
+  //       ease: "Power3.easeInOut",
+  //     }, 0.2)
+  //     .fromTo(q("#about"), {
+  //       opacity: 0,
+  //       x: -20,
+  //     }, {
+  //       opacity: 1,
+  //       x: 0,
+  //       ease: "Power3.easeInOut",
+  //     }, 0.3)
+  //     .fromTo(q("#services"), {
+  //       opacity: 0,
+  //       x: -20,
+  //     }, {
+  //       opacity: 1,
+  //       x: 0,
+  //       ease: "Power3.easeInOut",
+  //     }, 0.4)
+  //     .fromTo(q("#contact"), {
+  //       opacity: 0,
+  //       x: -20,
+  //     }, {
+  //       opacity: 1,
+  //       x: 0,
+  //       ease: "Power3.easeInOut",
+  //     }, 0.5);
 
-  }, []);
+  // }, []);
     return (
-        <div className={styles.Nav} ref={el}>
+        <div className={styles.Nav}>
         <div className={styles.Left}>
-        <div className={styles.Logo} id="logo">
-        <div className={styles.Icon}>
+        <motion.div className={styles.Logo}
+        >
+        <motion.div className={styles.Icon}
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}>
          <Image src={image1} layout='fill' objectFit='cover' alt=''></Image>
-        </div>
-        </div>
+        </motion.div>
+        </motion.div>
         </div>
         <div className={styles.Right}>
         <ul className={styles.Links}>
-        <li id="home"><Link href="#hero">Home</Link></li>
-        <li id="about"><Link href="#about">About</Link></li>
-        <li id="services"><Link href="#services">Services</Link></li>
-        <li id="contact"><Link href="#footer">Contact</Link></li>
+        <motion.li id="home"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: .2, duration: 1, ease: "easeInOut" }}
+        ><Link href="#hero">Home</Link></motion.li>
+        <motion.li id="about"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: .3, duration: 1, ease: "easeInOut" }}
+        ><Link href="#about">About</Link></motion.li>
+        <motion.li id="services"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: .4, duration: 1, ease: "easeInOut" }}
+        ><Link href="#services">Services</Link></motion.li>
+        <motion.li id="contact"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: .5, duration: 1, ease: "easeInOut" }}
+        ><Link href="#footer">Contact</Link></motion.li>
         </ul>
-        <div className={styles.Menu__icon} id="menu">
+        <motion.div className={styles.Menu__icon} id="menu"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: .2, duration: 1, ease: "easeInOut" }}>
         <HiMenuAlt3 size={35} />
-        </div>
+        </motion.div>
         </div>
         </div>
     )

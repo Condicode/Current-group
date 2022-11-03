@@ -32,7 +32,7 @@ function Mission() {
       scrollTrigger: {
         trigger: '#icon1',
         scrub: 1,
-        start: 'top 10%',
+        start: 'top 90%',
         endTrigger: '',
         end: "+=500",
       },
@@ -81,9 +81,10 @@ function Mission() {
       scrollTrigger: {
         trigger: '#icon2',
         scrub: 1,
-        start: 'top 10%',
+        start: 'top 90%',
         endTrigger: '',
         end: "+=500",
+
       },
         duration: 1,
         y: 0,
@@ -128,9 +129,9 @@ function Mission() {
       },
       {
       scrollTrigger: {
-        trigger: '#mission-p',
+        trigger: '#icon3',
         scrub: 1,
-        start: 'top 60%',
+        start: 'top 90%',
         endTrigger: '',
         end: "+=500",
       },
@@ -177,9 +178,9 @@ function Mission() {
       },
       {
       scrollTrigger: {
-        trigger: '#mission-p',
+        trigger: '#icon4',
         scrub: 1,
-        start: 'top 60%',
+        start: 'top 90%',
         endTrigger: '',
         end: "+=500",
       },

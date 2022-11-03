@@ -10,9 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .Icon {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100px;
