@@ -230,15 +230,14 @@ function Mission() {
          <Image src={image4} width={30} height={30} layout='fixed' objectFit='cover' alt=''></Image>
          </div>
          <h2 id="vision-h2">Our Vision</h2>
-         <p id="vision-p">An integral part of the productivity and operations of each customers business, by providing technical solutions that optimize productivity.</p>
+         <p id="vision-p">To stand as a stable company, in a position to take up any challenges in construction industy.</p>
         </div>
         <div className={styles.Right}>
         <div className={styles.Icon} id="icon2">
          <Image src={image1} width={30} height={30} layout='fixed' objectFit='cover' alt=''></Image>
          </div>
          <h2 id="mission-h2">Our Mission</h2>
-         <p id="mission-p">Our Mission is to employ highly experienced and knowledgeable staff capable of
-        serving the needs of our customers and their industry requirements.</p>
+         <p id="mission-p">To provide the highest quality, safest services, through the most consistent, professional and effient approach</p>
         </div>
         </div>
         <div className={styles.Bottom}>
@@ -247,7 +246,7 @@ function Mission() {
          <Image src={image2} width={30} height={30} layout='fixed' objectFit='cover' alt=''></Image>
          </div>
          <h2 id="strength-h2">Our Values(strength)</h2>
-         <p id="strength-p">The Company has equipped with all types of resources. The Company is enriched with Professionals in its team in the field of Project Management, Engineering, Finance,</p>
+         <p id="strength-p">The Company has equipped with all types of resources. The Company is enriched with Professionals in its team in the field of Project Management, Engineering and Finance.</p>
         </div>
         <div className={styles.Right}>
         <div className={styles.Icon} id="icon4">

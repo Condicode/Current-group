@@ -122,7 +122,7 @@ function Work() {
         </div>
         <div className={styles.Description}>
         <h3>Tanesco tanzania</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quibusdam.</p>
+        <p>Construction of transformer bases at Ilala.</p>
         </div>
         </div>
         <div className={styles.Card} id="work-card2">
@@ -131,7 +131,7 @@ function Work() {
         </div>
         <div className={styles.Description}>
         <h3>Jembe plaza</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quibusdam.</p>
+        <p>Construction of supermarkets and shops building at kinondoni.</p>
         </div>
         </div>
         <div className={styles.Card} id="work-card3">
@@ -140,7 +140,7 @@ function Work() {
         </div>
         <div className={styles.Description}>
         <h3>Premier school</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quibusdam.</p>
+        <p>Construction of multi-purpose hall at premier school bagamoyo.</p>
         </div>
         </div>
         </div>

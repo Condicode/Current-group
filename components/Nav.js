@@ -8,6 +8,7 @@ import { useLayoutEffect, useRef} from 'react'
 React.useLayoutEffect = React.useEffect
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { motion } from 'framer-motion'
+import Example from './Example'
 
 function Nav() {
   //   const el = useRef();
@@ -104,13 +105,9 @@ function Nav() {
         transition={{ delay: .5, duration: 1, ease: "easeInOut" }}
         ><Link href="#footer">Contact</Link></motion.li>
         </ul>
-        <motion.div className={styles.Menu__icon} id="menu"
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: .2, duration: 1, ease: "easeInOut" }}>
-        <HiMenuAlt3 size={35} />
-        </motion.div>
         </div>
+        <Example />
+
         </div>
     )
 }

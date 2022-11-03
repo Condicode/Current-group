@@ -132,7 +132,7 @@ function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: .4, duration: 1, ease: "easeInOut"  }}
-        >WeDu provides an effective and powerful <br /> way to manage your projects</motion.p>
+        >We strive to provide effective and powerful <br /> services to manage your projects</motion.p>
          <motion.button id="button"
          initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
