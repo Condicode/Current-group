@@ -256,6 +256,13 @@ function Services() {
         opacity: 1,
       });
 }, []);
+
+    const onEnter = ({ currentTarget }) => {
+      gsap.to(currentTarget, { scale: 1.1, ease: "power2.out", delay: .1, duration: 1 });
+    };
+    const onLeave = ({ currentTarget }) => {
+      gsap.to(currentTarget, { scale: 1, ease: "power2.out", delay: .1 });
+    };
     return (
         <div className={styles.Services} id="services" ref={el}>
         <div className={styles.Top}>
@@ -269,33 +276,33 @@ function Services() {
         <div className={styles.Upper}>
         <div className={styles.One}>
         <div className={styles.Image} id="services-image1">
-        <Image src={image1} className={styles.Image__inner} layout='fill' objectFit='cover' alt=''></Image>
+        <Image src={image1} className={styles.Image__inner} layout='fill' objectFit='cover' alt='' onMouseEnter={onEnter} onMouseLeave={onLeave}></Image>
         </div>
         <h3 id="h3-one">General <br /> Supply</h3>
-        <p id="services-p2">I am a paragraph. Click here to add your own text and edit me. I am a great place for you to tell a story and let your users know a little more about you.</p>
+        <p id="services-p2">We are equiped professionals at supplying general constraction needs in all stages of project development. We oofer generous prices contrast to the current market.</p>
         </div>
         <div className={styles.Two}>
         <div className={styles.Image} id="services-image2">
-        <Image src={image2} className={styles.Image__inner} layout='fill' objectFit='cover' alt=''></Image>
+        <Image src={image2} className={styles.Image__inner} layout='fill' objectFit='cover' alt='' onMouseEnter={onEnter} onMouseLeave={onLeave}></Image>
         </div>
         <h3 id="h3-two">Building & <br /> Civil works</h3>
-        <p id="services-p3">I am a paragraph. Click here to add your own text and edit me. I am a great place for you to tell a story and let your users know a little more about you.</p>
+        <p id="services-p3">Current group has a refreshing reputation in the Tanzanian civil works industry. We are reliable and trusted to deliver higher quality than most companies our size.</p>
         </div>
         </div>
         <div className={styles.Lower}>
         <div className={styles.Three}>
         <div className={styles.Image} id="services-image3">
-        <Image src={image3} className={styles.Image__inner} layout='fill' objectFit='cover' alt=''></Image>
+        <Image src={image3} className={styles.Image__inner} layout='fill' objectFit='cover' alt='' onMouseEnter={onEnter} onMouseLeave={onLeave}></Image>
         </div>
         <h3 id="h3-three">Designing & <br /> Innovation works</h3>
-        <p id="services-p4">I am a paragraph. Click here to add your own text and edit me. I am a great place for you to tell a story and let your users know a little more about you.</p>
+        <p id="services-p4">We create modern building designs coupled with practical architecture. We also do rennovations for existing projects, both commercial and resindential.</p>
         </div>
         <div className={styles.Four}>
         <div className={styles.Image} id="services-image4">
-        <Image src={image4} className={styles.Image__inner} layout='fill' objectFit='cover' alt=''></Image>
+        <Image src={image4} className={styles.Image__inner} layout='fill' objectFit='cover' alt='' onMouseEnter={onEnter} onMouseLeave={onLeave}></Image>
         </div>
         <h3 id="h3-four">Labour <br /> provision</h3>
-        <p id="services-p5">I am a paragraph. Click here to add your own text and edit me. I am a great place for you to tell a story and let your users know a little more about you.</p>
+        <p id="services-p4">Current Group has a subsidiary company called Current Labourers which is focused on labour provision. We provide and manage workers from as little as 20 to as many as our client's needs.</p>
         </div>
         </div>
         </div>

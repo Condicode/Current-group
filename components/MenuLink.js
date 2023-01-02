@@ -32,7 +32,7 @@ export const MenuLink = ({ link, path, icon, goBackIcon, onClick, width }) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          {link}
+         <a href="">{link}</a>
         </motion.li>
       </Link>
     </>

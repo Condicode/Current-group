@@ -80,10 +80,6 @@ function Gallerly() {
 }, []);
   return (
     <div className={styles.Gallery} id="gallerly" ref={el}>
-    <div className={styles.Heading}>
-        <h2 id="gallerly-h2">Gallerly</h2>
-        <p id="gallerly-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos molestias consequatur repellat beatae amet quasi tenetur assumenda, pariatur ullam consectetur, perferendis, quia voluptas nobis deleniti asperiores itaque est? Cum, facere.</p>
-    </div>
     <div className={styles.Carousel__container} id="carousel">
         <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} stopOnHover>
             <div className={styles.Work__image}>

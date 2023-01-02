@@ -5,121 +5,9 @@ import image1 from '../images/5.png'
 import image2 from '../images/2.png'
 import image3 from '../images/4.png'
 import image4 from '../images/construction1.svg'
-import { gsap } from "gsap";
-import { useLayoutEffect, useRef} from 'react'
-React.useLayoutEffect = React.useEffect
 import { motion } from 'framer-motion'
 
 function Hero() {
-  //   const el = useRef();
-  // const tl = useRef();
-
-  //  useLayoutEffect(() => {    
-  // const q = gsap.utils.selector(el);
-
-    
-  //   tl.current = gsap.timeline({defaults: { delay: 1, duration: 1, ease: "power2.out"} })
-  //     .fromTo(q("#h1"), {
-  //       opacity: 0,
-  //       y: 20,
-  //     }, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "Expo.easeInOut"
-  //     }, 0.3)
-  //     .fromTo(q("#p1"), {
-  //       opacity: 0,
-  //       y: 20,
-  //     }, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 0.4)
-  //     .fromTo(q("#button"), {
-  //       opacity: 0,
-  //       y: 20,
-  //     }, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 0.5)
-  //     .fromTo(q("#icon1"), {
-  //       opacity: 0,
-  //       x: -20,
-  //     }, {
-  //       opacity: 1,
-  //       x: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 0.6)
-  //     .fromTo(q("#icon1-p"), {
-  //       opacity: 0,
-  //       x: -20,
-  //     }, {
-  //       opacity: 1,
-  //       x: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 0.7)
-  //     .fromTo(q("#icon2"), {
-  //       opacity: 0,
-  //       x: -20,
-  //     }, {
-  //       opacity: 1,
-  //       x: 0,
-  //       ease: "Expo.easeInOut"
-  //     }, 0.8)
-  //     .fromTo(q("#icon2-p"), {
-  //       opacity: 0,
-  //       x: -20,
-  //     }, {
-  //       opacity: 1,
-  //       x: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 0.9)
-  //     .fromTo(q("#icon3"), {
-  //       opacity: 0,
-  //       x: -20,
-  //     }, {
-  //       opacity: 1,
-  //       x: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 1)
-  //     .fromTo(q("#icon3-p"), {
-  //       opacity: 0,
-  //       x: -20,
-  //     }, {
-  //       opacity: 1,
-  //       x: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 1.1)
-  //     .fromTo(q("#svg1"), {
-  //       opacity: 0,
-  //       y: 20,
-  //     }, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 0.5)
-  //     .fromTo(q("#svg-image"), {
-  //       opacity: 0,
-  //       y: 20,
-        
-  //     }, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "Power3.easeInOut",
-  //     }, 0.7)
-  //     .fromTo(q("#svg-wave"), {
-  //       opacity: 0,
-  //       y: 20,
-  //       scale: 1.5
-  //     }, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "Power3.easeInOut",
-  //       scale: 1,
-  //       duration: 1.5
-  //     }, 0.9);
-  //   }, []);
     return (
         <motion.div className={styles.Hero} id="hero">
         <div className={styles.Left}>
@@ -134,12 +22,14 @@ function Hero() {
         transition={{ delay: .4, duration: 1, ease: "easeInOut"  }}
         >We strive to provide effective and powerful <br /> services to manage your projects</motion.p>
          <motion.button id="button"
+        whileHover={{ backgroundColor: "#ffbf23", color: "#000", transition:{duration: .5}}}
+        whileTap={{ scale: .9, transition:{duration: .1}}}
          initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: .5, duration: 1, ease: "easeInOut"  }}
+        animate={{ opacity: 1, y: 0, transition:{ delay: .5, duration: 1, ease: "easeInOut"} }}
          >Contact Us</motion.button>
          <ul>
-         <li>
+         <motion.li
+         whileHover={{ y: -10, transition:{duration: .3}}}>
          <motion.div className={styles.Icon}
          initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -151,8 +41,9 @@ function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: .7, duration: 1, ease: "easeInOut"  }}
          >General <br /> Supply</motion.p>
-         </li>
-         <li>
+         </motion.li>
+         <motion.li
+         whileHover={{ y: -10, transition:{duration: .3}}}>
          <motion.div className={styles.Icon}
          initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -164,8 +55,9 @@ function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: .9, duration: 1, ease: "easeInOut"  }}
          >Design & <br /> Innovation</motion.p>
-         </li>
-         <li>
+         </motion.li>
+         <motion.li
+         whileHover={{ y: -10, transition:{duration: .3}}}>
          <motion.div className={styles.Icon}
          initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -177,7 +69,7 @@ function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.1, duration: 1, ease: "easeInOut"  }}
          >Building & <br /> Civil Works</motion.p>
-         </li>
+         </motion.li>
          </ul>
         </div>
         <div className={styles.Right}>

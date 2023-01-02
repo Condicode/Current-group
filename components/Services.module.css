@@ -17,7 +17,6 @@
     height: fit-content;
 }
 .Top h2 {
-  font-family: "Spacegrotesk";
   font-weight: normal;
   font-size: 40px;
   text-transform: capitalize;
@@ -25,7 +24,6 @@
 
 .Top p {
   font-size: 18px;
-  font-family: "ProximaNovaFont";
   font-weight: normal;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -55,14 +53,12 @@
   gap: 50px;
 }
 .Bottom h3 {
-  font-family: "Spacegrotesk";
   font-weight: normal;
   font-size: 24px;
   text-transform: capitalize;
 }
 .Bottom p {
   font-size: 16px;
-  font-family: "ProximaNovaFont";
   font-weight: normal;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -103,135 +99,43 @@
 @media (max-width: 1440px) {
   .Services {
     padding: 30px 100px;
-    height: fit-content;
   }
 }
 
 /* media queries  max-width: 1024px*/
 @media (max-width: 1280px) {
-  .Services {
-    padding: 30px 50px;
-    height: fit-content;
-  }
-
-    .Top h2 {
-      font-family: "Spacegrotesk";
-      font-weight: normal;
-      font-size: 40px;
-      text-transform: capitalize;
-    }
-  
-    .Top p {
-      font-size: 18px;
-      font-family: "ProximaNovaFont";
-      font-weight: normal;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      margin-top: 0;
-      width: 55%;
-    }
-  
-    .Bottom {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      height: fit-content;
-      margin-top: 50px;
-      gap: 100px;
+    .Services {
+      padding: 30px 50px;
     }
     .Bottom .Upper {
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: fit-content;
-      gap: 50px;
     }
 
     .Bottom .Lower {
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: fit-content;
-      gap: 50px;
     }
-  
-    .Bottom h3 {
-      font-family: "Spacegrotesk";
-      font-weight: normal;
-      font-size: 24px;
-      text-transform: capitalize;
-    }
-  
-    .Bottom p {
-      font-size: 16px;
-      font-family: "ProximaNovaFont";
-      font-weight: normal;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      margin-top: 0;
-    }
-  
-    .One {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .Two {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .Three {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .Four {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .Image {
-      position: relative;
-      height: 300px;
-      width: 226px;
-      border: 2px solid #000;
-      border-radius: 15px;
-    }
-  
-    .Image__inner {
-      border-radius: 15px;
+}
+@media (max-width: 1024px) {
+  .Top p {
+    width: 55%;
     }
 }
 
 /* media queries  max-width: 768px*/
 @media (max-width: 768px) {
   .Services {
-    padding: 30px 50px;
-    height: fit-content;
-  }
-
+      padding: 30px 40px;
+    }
   .Top p {
     width: 100%;
   }
 
   .Bottom {
     flex-direction: column;
-    gap: 50px;
   }
 
   .Bottom h3 {
     font-size: 20px;
-  }
-
-  .Bottom p {
-    font-size: 14px;
   }
 
   .Image {
@@ -242,23 +146,6 @@
 
 /* media queries  max-width: 420px*/
 @media (max-width: 420px) {
-  .Services {
-    padding: 30px 40px;
-    height: fit-content;
-  }
-
-  .Top p {
-    width: 100%;
-  }
-
-  .Bottom {
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  .Bottom h3 {
-    font-size: 20px;
-  }
 
   .Bottom p {
     font-size: 14px;
@@ -276,51 +163,14 @@
     padding: 20px 40px;
     height: fit-content;
   }
-  .Top p {
-    width: 100%;
-  }
-  .Bottom {
-    flex-direction: column;
-    gap: 50px;
-  }
-  .Bottom h3 {
-    font-size: 20px;
-  }
-  .Bottom p {
-    font-size: 14px;
-  }
-  .Image {
-    height: 200px;
-    width: 150px;
-  }
 }
 
 /* media queries  max-width: 320px*/
 @media (max-width: 320px) {
   .Services {
-    padding: 20px 20px;
-    height: fit-content;
+    padding: 20px;
   }
-
   .Top p {
-    width: 100%;
-  }
-
-  .Bottom {
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  .Bottom h3 {
-    font-size: 20px;
-  }
-
-  .Bottom p {
-    font-size: 14px;
-  }
-
-  .Image {
-    height: 200px;
-    width: 150px;
+    font-size: 16px;
   }
 }

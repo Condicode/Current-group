@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { useRef, useLayoutEffect} from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js'
 React.useLayoutEffect = React.useEffect
+import { motion } from 'framer-motion'
 
 function CTA() {
     gsap.registerPlugin(ScrollTrigger);
@@ -74,7 +75,11 @@ function CTA() {
     return (
         <div className={styles.CTA} id="cta" ref={el}>
         <h1 id="cta-h1">We are fully commited and dedicated to <br /> exceeding the standard for quality</h1>
-         <button id="cta-button">Contact Us</button>
+         <motion.button id="cta-button"
+         whileHover={{ backgroundColor: "#ffbf23", color: "#000", transition:{duration: .5}}}
+         whileTap={{ scale: .9, transition:{duration: .1}}}
+         >
+         Contact Us</motion.button>
          <div className={styles.Image} id="cta-image">
         <Image src={image1} layout='fill' objectFit='cover' alt=''></Image>
         </div>

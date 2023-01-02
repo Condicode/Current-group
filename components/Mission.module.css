@@ -5,14 +5,12 @@
   overflow: hidden;
 }
 .Mission h2 {
-  font-family: "Spacegrotesk";
   font-weight: normal;
   font-size: 26px;
   text-transform: capitalize;
 }
 .Mission p {
   font-size: 18px;
-  font-family: "ProximaNovaFont";
   font-weight: normal;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -77,35 +75,17 @@
   border: 2px solid #000;
   margin-right: 10px;
   border-radius: 5px;
+  background-color: #ffbf23;
 }
 
 /* media queries */
 @media (max-width: 1440px) {
-  .Mission {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-    }
     .Left {
       padding: 50px 100px;
     }
-  
     .Right {
       padding: 50px 100px;
     }
-  
-    .Icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 55px;
-      height: 55px;
-      border: 2px solid #000;
-      margin-right: 10px;
-      border-radius: 5px;
-    }
-
 }
 
 @media (max-width: 1024px) {
@@ -113,464 +93,63 @@
     padding: 30px 50px;
     }
   
-    .Mission h2 {
-      font-family: "Spacegrotesk";
-      font-weight: normal;
-      font-size: 26px;
-      text-transform: capitalize;
-    }
-  
-    .Mission p {
-      font-size: 18px;
-      font-family: "ProximaNovaFont";
-      font-weight: normal;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      margin-top: 0;
-    }
-  
-    .Top {
-      position: relative;
-      display: flex;
-      height: 50%;
-      width: 100%;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-    }
-  
-    .Top .Left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Top .Right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Bottom {
-      position: relative;
-      display: flex;
-      height: 50%;
-      width: 100%;
-    }
-  
-    .Bottom .Left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Bottom .Right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
     .Left {
-      position: relative;
-      height: 100%;
-      width: 50%;
-      border-right: 1px solid #00000046;
       padding: 0 50px 0 0;
     }
   
     .Right {
-      position: relative;
-      height: 100%;
-      width: 50%;
       padding: 0 0 0 50px;
-    }
-  
-    .Icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 55px;
-      height: 55px;
-      border: 2px solid #000;
-      margin-right: 10px;
-      border-radius: 5px;
     }
 
 }
 
 @media (max-width: 768px) {
   .Mission {
-    padding: 20px 20px;
+    padding: 20px;
     height: fit-content;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .Top {
-    display: flex;
     flex-direction: column;
     height: fit-content;
-    width: 100%;
     border-bottom: none;
   }
 
-  .Top .Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .Top .Right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
   .Bottom {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     height: fit-content;
-    width: 100%;
-  }
-
-  .Bottom .Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: fit-content;
-  }
-
-  .Bottom {
-    position: relative;
-    display: flex;
-    height: 50%;
-    width: 100%;
-  }
-
-  .Bottom .Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .Bottom .Right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
   }
 
   .Left {
-    position: relative;
-    height: 100%;
     width: 100%;
     border-right: none;
-    padding: 20px 20px;
+    padding: 20px;
   }
 
   .Right {
-    position: relative;
-    height: 100%;
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px;
   }
-
-  .Icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    border: 2px solid #000;
-    margin-right: 10px;
-    border-radius: 5px;
-  }
-
 }
 
-/* media queries */
 @media (max-width: 420px) {
-  .Mission {
-    padding: 20px 20px;
-    height: fit-content;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .Top {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    width: 100%;
-    border-bottom: none;
-  }
-
-  .Top .Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .Top .Right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .Bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: fit-content;
-    width: 100%;
-  }
-
-  .Bottom .Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: fit-content;
-  }
-
-  .Bottom {
-    position: relative;
-    display: flex;
-    height: 50%;
-    width: 100%;
-  }
-
-  .Bottom .Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .Bottom .Right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .Left {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border-right: none;
-    padding: 20px 20px;
-  }
-
-  .Right {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 20px 20px;
-  }
-
   .Icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40px;
     height: 40px;
-    border: 2px solid #000;
-    margin-right: 10px;
-    border-radius: 5px;
   }
-
 }
-
-@media (max-width: 375px) {
-  .Mission {
-    padding: 20px 20px;
-    height: fit-content;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-    .Top {
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      width: 100%;
-      border-bottom: none;
-  }
-    .Top .Left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Top .Right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .Bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: fit-content;
-    width: 100%;
-    }
-  .Bottom .Left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    height: fit-content;
-  }
-    .Bottom {
-      position: relative;
-      display: flex;
-      height: 50%;
-      width: 100%;
-    }
-  
-    .Bottom .Left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Bottom .Right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Left {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      border-right: none;
-      padding: 20px 20px;
-    }
-  
-    .Right {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      padding: 20px 20px;
-    }
-  
-    .Icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      border: 2px solid #000;
-      margin-right: 10px;
-      border-radius: 5px;
-    }
-
-}
-
 @media (max-width: 320px) {
-  .Mission {
-      padding: 20px 20px;
-      height: fit-content;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .Top {
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      width: 100%;
-      border-bottom: none;
-    }
-  
-    .Top .Left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Top .Right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Bottom {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: fit-content;
-      width: 100%;
-    }
-  
-    .Bottom .Left {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      width: 100%;
-      height: fit-content;
-    }
-  
-    .Bottom {
-      position: relative;
-      display: flex;
-      height: 50%;
-      width: 100%;
-    }
-  
-    .Bottom .Left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Bottom .Right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .Left {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      border-right: none;
-      padding: 20px 0;
-    }
-  
-    .Right {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      padding: 20px 0;
-    }
-  
-    .Icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      border: 2px solid #000;
-      margin-right: 10px;
-      border-radius: 5px;
-    }
+  .Mission p {
+    font-size: 16px;
+  }
+  .Left {
+    padding: 0;
+  }
+
+  .Right {
+    padding: 0;
+  }
 }

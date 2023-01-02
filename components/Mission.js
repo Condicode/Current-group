@@ -14,14 +14,11 @@ function Mission() {
     gsap.registerPlugin(ScrollTrigger);
     gsap.core.globals('ScrollTrigger', ScrollTrigger);
 
-
   const el = useRef();
   const tl = useRef();
       
   useLayoutEffect(() => {   
-
     const q = gsap.utils.selector(el);
-
     
     tl.current = gsap.timeline({defaults: {duration: 1, ease: "power2.out", delay: .5} })
       .fromTo(q("#icon1"), {
@@ -230,14 +227,14 @@ function Mission() {
          <Image src={image4} width={30} height={30} layout='fixed' objectFit='cover' alt=''></Image>
          </div>
          <h2 id="vision-h2">Our Vision</h2>
-         <p id="vision-p">To stand as a stable company, in a position to take up any challenges in construction industy.</p>
+         <p id="vision-p">To stand as a stable company, in a position to take up any challenges in construction industy and Serve as many people as we can in an effort to contribute to the growth of our economy. </p>
         </div>
         <div className={styles.Right}>
         <div className={styles.Icon} id="icon2">
          <Image src={image1} width={30} height={30} layout='fixed' objectFit='cover' alt=''></Image>
          </div>
          <h2 id="mission-h2">Our Mission</h2>
-         <p id="mission-p">To provide the highest quality, safest services, through the most consistent, professional and effient approach</p>
+         <p id="mission-p">To employ highly experienced and knowledgeable staff capable of serving the needs of our customers and their industry requirementsand meet the future growth and market demands</p>
         </div>
         </div>
         <div className={styles.Bottom}>

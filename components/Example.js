@@ -16,7 +16,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: 'circle(30px at 40px 40px)',
+    clipPath: 'circle(0px at 40px 40px)',
     transition: {
       delay: 0.5,
       type: 'spring',
@@ -33,6 +33,7 @@ function Example () {
 
   return (
     <motion.nav
+    className={styles.Example}
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
       custom={height}

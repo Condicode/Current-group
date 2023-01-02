@@ -5,18 +5,15 @@ import { useRef, useLayoutEffect} from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js'
 React.useLayoutEffect = React.useEffect
 
-function About() {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.core.globals('ScrollTrigger', ScrollTrigger);
-
+const About = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.core.globals('ScrollTrigger', ScrollTrigger);
 
   const el = useRef();
   const tl = useRef();
       
   useLayoutEffect(() => {   
-
     const q = gsap.utils.selector(el);
-
     
     tl.current = gsap.timeline({defaults: {duration: 3, ease: "power2.out", delay: .5} })
       .fromTo(q("#h2"), {

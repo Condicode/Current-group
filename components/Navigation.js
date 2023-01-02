@@ -2,9 +2,10 @@ import * as React from "react";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { MenuLink } from "./MenuLink";
+import { FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 import styles from './Navigation.module.css'
-
 
 const variants = {
   open: {
@@ -33,54 +34,79 @@ const variants2 = {
 };
 
 
-export const Navigation = () => {
+export const Navigation = ({ toggle, width }) => {
 
   return (
-<div className={styles.Nav}>
+  <div className={styles.Nav}>
         <motion.ul variants={variants}>
-        <MenuLink
-            link="Menu"
-            goBackIcon
-            
-            width="60%"
-          />
-          <MenuLink
-            link="About"
-            goBackIcon
-            
-            width="60%"
-          />
-          <MenuLink
-            link="Projects"
-            goBackIcon
-            
-            width="60%"
-          />
-          <MenuLink
-            link="Contact"
-            goBackIcon
-            
-            width="60%"
-          />
+        <motion.li
+          width="60%"
+          onClick={toggle}
+          variants={variants2}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+        <Link href="/">
+         <a href="">Home</a>
+         </Link>
+        </motion.li>
+        <motion.li
+          width="60%"
+          onClick={toggle}
+          variants={variants2}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+         <a href="#about">About</a>
+        </motion.li>
+        <motion.li
+          width="60%"
+          onClick={toggle}
+          variants={variants2}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+         <a href="#work">Projects</a>
+        </motion.li>
+        <motion.li
+          width="60%"
+          onClick={toggle}
+          variants={variants2}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+         <a href="#footer">Contact</a>
+        </motion.li>
         </motion.ul>
-
-          <motion.ul variants={variants}>
+          <motion.div variants={variants} className={styles.Social}>
           <motion.hr variants={variants2} />
-          <motion.div className={styles.navigation__buttons} variants={variants2}>
-          <MenuLink
-            link="Twitter"
-            goBackIcon
-            
-            width="60%"
-          />
-          <MenuLink
-            link="Instagram"
-            goBackIcon
-            
-            width="60%"
-          />
+          <motion.div className={styles.navigation__buttons} variants={variants}>
+        <motion.a
+        variants={variants2}
+        width="60%"
+          onClick={toggle}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}>
+        <FaTwitter size="22px" />
+        </motion.a>
+        <motion.a
+        variants={variants2}
+        width="60%"
+          onClick={toggle}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}>
+        <FaFacebook size="22px" />
+        </motion.a>
+        <motion.a
+        variants={variants2}
+        width="60%"
+          onClick={toggle}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}>
+        <FaInstagram size="22px" />
+        </motion.a>
           </motion.div>
-        </motion.ul>
-</div>
+        </motion.div>
+  </div>
   );
 };
