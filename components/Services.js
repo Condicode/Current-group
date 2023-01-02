@@ -302,7 +302,7 @@ function Services() {
         <Image src={image4} className={styles.Image__inner} layout='fill' objectFit='cover' alt='' onMouseEnter={onEnter} onMouseLeave={onLeave}></Image>
         </div>
         <h3 id="h3-four">Labour <br /> provision</h3>
-        <p id="services-p4">Current Group has a subsidiary company called Current Labourers which is focused on labour provision. We provide and manage workers from as little as 20 to as many as our client's needs.</p>
+        <p id="services-p4">Current Group has a subsidiary company called Current Labourers which is focused on labour provision. We provide and manage workers from as little as 20 to as many as our client&apos;s needs.</p>
         </div>
         </div>
         </div>
