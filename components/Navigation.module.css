@@ -8,11 +8,9 @@
     padding: 20px;
     right: 0;
 }
-.Nav .navigation__buttons {
+.Nav .navigation__icons {
     display: flex;
     gap: 20px;
-    /* justify-content: center; */
-    /* margin-bottom: 20px; */
 }
 
 .Nav ul,
@@ -25,7 +23,10 @@
 .Nav ul {
     padding: 25px;
     position: relative;
-    /* top: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
     width: 100%;
     z-index: 15;
 }
@@ -44,13 +45,10 @@
 }
 
 .Nav li {
-    list-style: none;
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
     cursor: pointer;
-    justify-content: space-between;
     font-size: 18px;
+    width: fit-content;
 }
 
 .Nav a {

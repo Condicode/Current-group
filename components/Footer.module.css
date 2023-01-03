@@ -6,6 +6,8 @@
   overflow: hidden;
 }
 .Top {
+  display: flex;
+  align-items: center;
   height: 20vh;
   width: 100%;
   padding: 100px 150px;
@@ -97,7 +99,6 @@
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
-
 /* media queries max-width: 1024px*/ 
 @media (max-width: 1440px) {
   .Footer {

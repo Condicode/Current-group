@@ -16,6 +16,17 @@ const variants = {
   },
 };
 
+const variants3 = {
+  open: {
+    display: 'flex',
+    transition: { duration: .1, },
+  },
+  closed: {
+    display: 'none',
+    transition: { duration: .1  },
+  },
+};
+
 const variants2 = {
   open: {
     y: 0,
@@ -37,10 +48,9 @@ const variants2 = {
 export const Navigation = ({ toggle, width }) => {
 
   return (
-  <div className={styles.Nav}>
+  <motion.div className={styles.Nav} variants={variants3}>
         <motion.ul variants={variants}>
         <motion.li
-          width="60%"
           onClick={toggle}
           variants={variants2}
           whileHover={{ scale: 1.1 }}
@@ -51,7 +61,6 @@ export const Navigation = ({ toggle, width }) => {
          </Link>
         </motion.li>
         <motion.li
-          width="60%"
           onClick={toggle}
           variants={variants2}
           whileHover={{ scale: 1.1 }}
@@ -60,7 +69,6 @@ export const Navigation = ({ toggle, width }) => {
          <a href="#about">About</a>
         </motion.li>
         <motion.li
-          width="60%"
           onClick={toggle}
           variants={variants2}
           whileHover={{ scale: 1.1 }}
@@ -69,7 +77,6 @@ export const Navigation = ({ toggle, width }) => {
          <a href="#work">Projects</a>
         </motion.li>
         <motion.li
-          width="60%"
           onClick={toggle}
           variants={variants2}
           whileHover={{ scale: 1.1 }}
@@ -80,10 +87,9 @@ export const Navigation = ({ toggle, width }) => {
         </motion.ul>
           <motion.div variants={variants} className={styles.Social}>
           <motion.hr variants={variants2} />
-          <motion.div className={styles.navigation__buttons} variants={variants}>
+          <motion.div className={styles.navigation__icons} variants={variants}>
         <motion.a
         variants={variants2}
-        width="60%"
           onClick={toggle}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}>
@@ -91,7 +97,6 @@ export const Navigation = ({ toggle, width }) => {
         </motion.a>
         <motion.a
         variants={variants2}
-        width="60%"
           onClick={toggle}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}>
@@ -99,7 +104,6 @@ export const Navigation = ({ toggle, width }) => {
         </motion.a>
         <motion.a
         variants={variants2}
-        width="60%"
           onClick={toggle}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}>
@@ -107,6 +111,6 @@ export const Navigation = ({ toggle, width }) => {
         </motion.a>
           </motion.div>
         </motion.div>
-  </div>
+  </motion.div>
   );
 };
